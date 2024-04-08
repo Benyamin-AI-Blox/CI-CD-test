@@ -10,6 +10,8 @@ class Object {
 private:
     int previous;
     int next;
+protected:
+    double middle;
 public:
     Object();
     Object(int, int);
