@@ -6,6 +6,7 @@
 #include <iostream>
 #include "Object.h"
 #include <stdlib.h>
+#include <string.h>
 
 int main(){
     std::cout << "hello world\n";
@@ -15,7 +16,8 @@ int main(){
     std::cout << obj1->get_distance() << std::endl;
     std::cout << obj2->get_distance() << std::endl;
 
-    char *byte = calloc(sizeof(int) * 10, 0);
-
+    char *byte = (char*)malloc(sizeof(char) * 10);
+    strcpy(byte, "beny");
+    printf("%s\n", byte);
     return 0;
 }
