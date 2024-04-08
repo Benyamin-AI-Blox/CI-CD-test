@@ -2,12 +2,9 @@
 // Created by ben on 4/8/24.
 //
 
-
 #include <iostream>
 #include "Object.h"
-#include "Item.h"
 #include <stdlib.h>
-#include <string.h>
 
 int main(){
     std::cout << "hello world\n";
@@ -27,5 +24,6 @@ int main(){
     Item *new_item = Item(1, 2, 3.6, 6, 9);
     std::cout << new_item->get_middle() << std::endl;
     std::cout << new_item->get_front_distance() << std::endl;
+
     return 0;
 }
