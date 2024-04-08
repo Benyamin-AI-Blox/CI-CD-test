@@ -5,7 +5,6 @@
 
 #include <iostream>
 #include "Object.h"
-#include "Item.h"
 #include <stdlib.h>
 
 int main(){
