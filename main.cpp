@@ -2,7 +2,6 @@
 // Created by ben on 4/8/24.
 //
 
-
 #include <iostream>
 #include "Object.h"
 #include <stdlib.h>
