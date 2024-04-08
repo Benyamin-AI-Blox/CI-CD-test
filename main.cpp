@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include "Object.h"
+#include <stdlib.h>
 
 int main(){
     std::cout << "hello world\n";
@@ -13,6 +14,8 @@ int main(){
 
     std::cout << obj1->get_distance() << std::endl;
     std::cout << obj2->get_distance() << std::endl;
+
+    char *byte = calloc(sizeof(int) * 10, 0);
 
     return 0;
 }
