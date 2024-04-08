@@ -14,11 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: compile project
+    - name: build project
       run: make
 
-    - name: Install dependencies
-      run:
-
-    - name: Run
+    - name: Run project
       run: ./exe
