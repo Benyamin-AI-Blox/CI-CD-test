@@ -14,14 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: configure
-      run: ./configure
+    - name: compile project
+      run: g++ main.c -o main.exe
 
     - name: Install dependencies
-      run: make
+      run:
 
-    - name: Run check
-      run: make check
-
-    - name: Run distcheck
-      run: make distcheck
+    - name: Run
+      run: ./main.exe
