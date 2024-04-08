@@ -29,6 +29,5 @@ int main(){
     Item *new_item = Item(1, 2, 3.6, 6, 9);
     std::cout << new_item->get_middle() << std::endl;
     std::cout << new_item->get_front_distance() << std::endl;
-
     return 0;
 }
