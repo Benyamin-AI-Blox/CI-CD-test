@@ -4,12 +4,15 @@
 
 
 #include <iostream>
-#include <queue>
+#include "Object.h"
 
 int main(){
     std::cout << "hello world\n";
-    std::queue<int>Q;
-    Q.push(1);
-    Q.pop();
+    Object *obj1 = new Object(1, 2);
+    Object *obj2 = new Object();
+
+    std::cout << obj1->get_distance() << std::endl;
+    std::cout << obj2->get_distance() << std::endl;
+
     return 0;
 }

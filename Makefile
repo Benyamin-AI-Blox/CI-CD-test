@@ -1,11 +1,19 @@
-XX=g++
-XXFLAGS=
+CXX := g++
+CXXFLAGS := -Wall -std=c++11
 
-all: *.o
-	$(XX) *.o -o exe
+SRCS := main.cpp Object.cpp
+OBJS := $(SRCS:.cpp=.o)
 
-main.o: main.cpp
-	$(XX) -C main.c -o main.o
+EXEC = exe
 
+all: $(EXEC)
+
+$(EXEC): $(OBJS)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(EXEC)
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Clean
 clean:
-	rm -rf *.o exe
+	rm -f $(OBJS) $(EXEC) *.o
