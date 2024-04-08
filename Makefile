@@ -1,7 +1,7 @@
 CXX := g++
 CXXFLAGS := -Wall -std=c++11
 
-SRCS := main.cpp Object.cpp
+SRCS := main.cpp Object.cpp Item.cpp
 OBJS := $(SRCS:.cpp=.o)
 
 EXEC = exe
